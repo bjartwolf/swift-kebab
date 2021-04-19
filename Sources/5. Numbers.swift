@@ -12,6 +12,6 @@ func plus(_ a: Num, _ b: Num) -> Num {
       case .zero :
          return b 
       case .onemorethan(let n):
-         return Num.onemorethan(plus(n,b))
+         return .onemorethan(plus(n,b))
    }
 }
