@@ -15,3 +15,12 @@ func plus(_ a: Num, _ b: Num) -> Num {
          return .onemorethan(plus(n,b))
    }
 }
+/*
+func mult (_ a: Num, _ b: Num) -> Num {
+  match a with
+  | Zero -> throw   
+  | OneMoreThan n -> throw 
+} 
+
+mult(plus(b,b), c)
+*/
