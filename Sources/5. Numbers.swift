@@ -1,11 +1,11 @@
-indirect enum Num { 
+indirect enum Num: Equatable { 
    case zero
    case onemorethan(Num)
 }
 
-let a: Num = Num.zero
-let b: Num = .onemorethan(.zero)
-let c: Num = .onemorethan(.onemorethan(.zero))
+let zero: Num = Num.zero
+let one: Num = .onemorethan(.zero)
+let two: Num = .onemorethan(.onemorethan(.zero))
 
 func plus(_ a: Num, _ b: Num) -> Num {
    switch a {
@@ -15,6 +15,8 @@ func plus(_ a: Num, _ b: Num) -> Num {
          return .onemorethan(plus(n,b))
    }
 }
+
+plus(one,one) 
 /*
 func mult (_ a: Num, _ b: Num) -> Num {
   match a with
