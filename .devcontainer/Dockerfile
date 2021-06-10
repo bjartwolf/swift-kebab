@@ -1,1 +1,1 @@
-FROM swift:5.3
+FROM swiftlang/swift:nightly-5.5
